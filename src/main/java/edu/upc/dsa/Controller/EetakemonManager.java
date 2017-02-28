@@ -10,10 +10,10 @@ import java.util.List;
 public class EetakemonManager {
     private List<Eetakemon> eetakemonList = new ArrayList<Eetakemon>();
 
-    public List<Eetakemon> getList() throws NullPointerException {
+    public List<Eetakemon> getList() {
         return this.eetakemonList;
     }
-    public void addEetakemonToList(Eetakemon e) throws IndexOutOfBoundsException{
+    public void addEetakemonToList(Eetakemon e) {
         this.eetakemonList.add(e);
     }
     public void delEetakemonFromList(int id) {
@@ -32,5 +32,10 @@ public class EetakemonManager {
             }
         }
         return resultado;
+    }
+
+    public List<Eetakemon> getEtakemonFromListbyNameAproximation (String aproximation) {
+        List<Eetakemon> aproxList = new ArrayList<>();
+        return aproxList;
     }
 }
